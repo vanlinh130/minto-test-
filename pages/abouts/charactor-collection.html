@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Charactor Collection</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="../../build/tailwind.css" />
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+    </head>
+    <body>
+        <div class="overflow-hidden">
+            <!-- Header -->
+            <div>
+                <!-- Header PC -->
+                <header class="hidden md:hidden lg:block">
+                    <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                        <div class="container mx-auto">
+                            <div
+                                class="flex items-center max-sm:flex-col justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[100px]"
+                            >
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-solution">
+                                        <span
+                                            class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >SOLUTION</span
+                                        >
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-center cursor-pointer">
+                                    <a href="/" class=""><img src="../../assets/img/logo.png" /></a>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                        <span
+                                            class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >ABOUT</span
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Header table and phone -->
+                <header class="block md:block lg:hidden">
+                    <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                        <div class="container mx-auto px-5 md:px-10 lg:px-16">
+                            <div
+                                class="flex items-center justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[15px] md:mb-[100px] lg:mb-[100px]"
+                            >
+                                <div class="flex items-center justify-center cursor-pointer">
+                                    <a href="/" class=""
+                                        ><img
+                                            src="../../assets/img/logo.png"
+                                            class="w-[80px] md:w-[140px] lg:w-[160px]"
+                                    /></a>
+                                    <button
+                                        class="mt-[7px] mx-5 px-2 rounded text-[#ffffff] hover:opacity-80 js-solution"
+                                    >
+                                        <span
+                                            class="text-[18px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >SOLUTION</span
+                                        >
+                                        <i class="fa-solid fa-chevron-right ml-2"></i>
+                                    </button>
+                                </div>
+
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-2 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                        <i class="fa-solid fa-bars text-[30px]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Drop menu v1 -->
+                <div
+                    class="bg-[#02052E] min-h-screen w-full fixed top-0 left-0 right-0 z-50 py-16 header-nav solution-modal js-solution-modal nav-solution"
+                >
+                    <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-solution-modal-container">
+                        <div class="container mx-auto">
+                            <div class="flex items-end justify-start">
+                                <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                    >Solution.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                        <ul class="w-full">
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/character-marrketing.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                        >CHARACTER MARKETTING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/character-licensing.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CHARACTER LICENSING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/creative-branding.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CREATIVE & BRANDING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/digital-stagery.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        DIGITAL & STRATEGY
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/event-production.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        EVENT & PRODUCTION
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="container mx-auto">
+                            <div
+                                class="bg-[#02052E] text-[#ffffff] cursor-pointer p-[19px] float-right hover:opacity-80 js-solution-modal-close"
+                            >
+                                <div class="flex items-center gap-4">
+                                    <img
+                                        src="../../assets/img/icon/square_arrow_left_white.png"
+                                        alt=""
+                                        class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                    />
+                                    <span
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                        >Close</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drop menu v2 -->
+                <div
+                    class="bg-[#02052E] w-full min-h-screen fixed top-0 left-0 right-0 z-50 py-16 header-nav about-modal js-about-modal nav-about"
+                >
+                    <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-about-modal-container">
+                        <div class="container mx-auto">
+                            <div class="flex items-end justify-end">
+                                <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                    >About us.</span
+                                >
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                        <ul class="w-full">
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/about.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        ABOUT MINTO
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/team.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        TEAM
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/news.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        NEWS & IDEA
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/carrer.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CARRER
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/artist-brand.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        ARTIST & BRAND
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/contact.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CONTACT
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="container mx-auto">
+                            <div
+                                class="bg-[#02052E] cursor-pointer p-[19px] text-[#ffffff] hover:opacity-80 js-about-modal-close"
+                            >
+                                <div class="flex items-center gap-4">
+                                    <span
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                        >Close</span
+                                    >
+                                    <img
+                                        src="../../assets/img/icon/square_arrow_right_white.png"
+                                        alt=""
+                                        class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minto Achievement -->
+            <div class="">
+                <div class="mt-10 md:mt-20 lg:mt-40 pt-10 pb-6 md:pb-10 lg:pb-80 px-10 md:px-10 lg:px-0">
+                    <div class="relative">
+                        <div class="container mx-auto max-lg:pr-0 lg:pr-80">
+                            <div
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                                data-aos-easing="ease-in-out"
+                                class="flex gap-4"
+                            >
+                                <div class="">
+                                    <img
+                                        src="./../../assets/img/img-charactor/collection/group_king.png"
+                                        class="h-full w-full"
+                                        alt=""
+                                    />
+                                </div>
+                                <h1
+                                    data-aos="fade-up"
+                                    data-aos-delay="400"
+                                    data-aos-easing="ease-in-out"
+                                    class="font-bold text-whites text-[32px] md:text-[48px] lg:text-[64px] lg:leading-78"
+                                >
+                                    Minto <br />
+                                    Achievement
+                                </h1>
+                            </div>
+                            <p
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                                data-aos-easing="ease-in-out"
+                                class="font-normal leading-6 text-whites py-5 pr-0 md:pr-0 lg:pr-20 max-lg:text-base text-lg"
+                            >
+                                We have revolutionized the marketing landscape by introducing Character Marketing and
+                                various solutions to the market. Over the years, we have accomplished numerous
+                                milestones that highlight our commitment to driving success for businesses across
+                                diverse sectors.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-8">
+                                <div data-aos="fade-up" data-aos-delay="700" data-aos-easing="ease-in-out" class="">
+                                    <div class="font-bold text-aquas text-[48px] leading-[56px] max-lg:text-32">
+                                        +5B
+                                    </div>
+                                    <div class="font-medium text-whites lg:leading-10 text-lg md:text-2xl lg:text-32">
+                                        Dowloaded World No,1
+                                    </div>
+                                </div>
+
+                                <div data-aos="fade-up" data-aos-delay="700" data-aos-easing="ease-in-out" class="">
+                                    <div class="font-bold text-aquas text-[48px] leading-[56px] max-lg:text-32">
+                                        ~2000
+                                    </div>
+                                    <span class="font-medium text-whites lg:leading-10 text-lg md:text-2xl lg:text-32"
+                                        >Characters created</span
+                                    >
+                                </div>
+
+                                <div data-aos="fade-up" data-aos-delay="700" data-aos-easing="ease-in-out" class="">
+                                    <div class="font-bold text-aquas text-[48px] leading-[56px] max-lg:text-32">5M</div>
+                                    <span class="font-medium text-whites lg:leading-10 text-lg md:text-2xl lg:text-32"
+                                        >Followers on owned channels</span
+                                    >
+                                </div>
+
+                                <div data-aos="fade-up" data-aos-delay="700" data-aos-easing="ease-in-out" class="">
+                                    <div class="font-bold text-aquas text-[48px] leading-[56px] max-lg:text-32">
+                                        10B
+                                    </div>
+                                    <span class="font-medium text-whites lg:leading-10 text-lg md:text-2xl lg:text-32"
+                                        >Engagements per year</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            data-aos="fade-left"
+                            data-aos-delay="800"
+                            data-aos-easing="ease-in-out"
+                            class="absolute top-0 right-0 bottom-0 w-full hidden md:hidden lg:block"
+                        >
+                            <div class="relative">
+                                <div class="absolute top-[-50px] right-0 z-[9]">
+                                    <img src="./../../assets/img/img-charactor/collection/achievement.png" alt="" />
+                                </div>
+                                <div class="absolute top-0 right-0">
+                                    <img
+                                        src="./../../assets/img/img-charactor/collection/group_achievement_1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="absolute right-0">
+                                    <img
+                                        src="./../../assets/img/img-charactor/collection/group_achievement_2.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Character Catalogue -->
+            <div class="bg-whites">
+                <div
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-easing="ease-in-out"
+                    class="py-20 w-full px-5 md:px-10 lg:px-10 max-lg:py-10"
+                >
+                    <div class="font-normal text-2xl leading-33 text-aquas text-center max-lg:text-lg">
+                        Meet our characters
+                    </div>
+                    <h1
+                        class="font-bold text-darkBlue leading-78 text-center text-[32px] md:text-[48px] lg:text-[64px]"
+                    >
+                        Character Catalogue
+                    </h1>
+
+                    <div class="relative flex overflow-x-hidden">
+                        <div
+                            class="grid gap-10 py-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-md:py-5 max-md:gap-5 animate-marquee whitespace-nowrap text-white"
+                        >
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1374.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1375.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1376.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1377.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1378.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1379.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1380.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1381.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1382.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1383.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1384.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1385.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+
+                        <div
+                            class="grid ml-10 gap-10 py-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-md:py-5 max-md:gap-5 absolute top-0 animate-marquee2 whitespace-nowrap text-white"
+                        >
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1374.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1375.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1376.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1377.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1378.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1379.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1380.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1381.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1382.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1383.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1384.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="/pages/abouts/charactor-profile.html" class="w-full h-full">
+                                <img
+                                    class="w-full h-full"
+                                    src="./../../assets/img/img-charactor/collection/Rectangle_1385.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Character Licensing -->
+            <div class="py-40">
+                <div class="relative">
+                    <div class="container mx-auto">
+                        <div class="pr-0 md:pr-0 lg:pr-[500px]">
+                            <div
+                                data-aos="fade-right"
+                                data-aos-delay="400"
+                                data-aos-easing="ease-in-out"
+                                class="px-10 md:px-10 lg:px-0"
+                            >
+                                <h1
+                                    class="font-bold text-whites text-[32px] md:text-[48px] lg:text-[64px] md:leading-78 lg:leading-78"
+                                >
+                                    Character Licensing
+                                </h1>
+                                <p class="font-normal text-whites text-lg leading-6 mt-6 max-lg:text-base">
+                                    Character licensing is the process of granting permission to third-party companies
+                                    or individuals to use our particular character or intellectual property (IP) for
+                                    commercial purposes. This licensing arrangement allows you to create, produce,
+                                    market, and sell products or services featuring the licensed character.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        data-aos="fade-left"
+                        data-aos-delay="400"
+                        data-aos-easing="ease-in-out"
+                        class="absolute top-0 right-0 bottom-0 hidden md:hidden lg:block"
+                    >
+                        <div class="">
+                            <img
+                                class="w-full h-full object-cover"
+                                src="./../../assets/img/img-charactor/collection/pexels-michael-burrows.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="container mx-auto px-5 md:px-10 lg:px-0">
+                <div class="grid grid-cols-1 py-6 lg:py-12">
+                    <div class="flex flex-col gap-4 text-center px-5 sm:px-16 lg:px-32">
+                        <span class="text-[#34CEBC] text-[24px] font-normal leading-[33.6px] py-2">Let’s Connect</span>
+                        <h2
+                            class="text-[#ffffff] text-[32px] md:text-[48px] lg:text-[64px] font-bold leading-[38.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                        >
+                            Contact
+                        </h2>
+                        <p class="text-[#F2F3FF] text-[16px] font-normal leading-[24px]">
+                            If you want to build a brand mascot and a comprehensive marketing plan, leave your
+                            information below. Minto will contact the consultant as soon as possible
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-[48px] lg:gap-[64px] pt-12">
+                        <div class="flex flex-col justify-end">
+                            <div class="flex flex-col gap-5">
+                                <div class="flex items-center justify-center">
+                                    <img src="../../assets/img/logo_02.png" alt="" />
+                                </div>
+                                <div class="flex flex-col gap-5">
+                                    <h3
+                                        class="text-[#34CEBC] text-[24px] md:text-[30px] lg:text-[32px] font-bold leading-[40px]"
+                                    >
+                                        Minto (Vietnam) Co., Ltd.
+                                    </h3>
+                                    <div class="flex flex-col gap-5">
+                                        <div class="flex gap-5">
+                                            <img
+                                                src="../../assets/img/icon/contact_address_white.png"
+                                                alt=""
+                                                class="w-[24px] h-[24px]"
+                                            />
+                                            <span class="text-[#ffffff] text-[16px] font-normal leading-[24px]"
+                                                >Ground floor, Thien Son building, 5 Nguyen Gia Thieu, Vo Thi Sau ward,
+                                                district 3, Ho Chi Minh, Vietnam</span
+                                            >
+                                        </div>
+                                        <a
+                                            href="tel:%84-909-868-915"
+                                            class="flex items-center gap-5 hover:opacity-80 cursor-pointer transition-all"
+                                        >
+                                            <img
+                                                src="../../assets/img/icon/contact_phone_white.png"
+                                                alt=""
+                                                class="w-[24px] h-[23.3px]"
+                                            />
+                                            <span class="text-[#ffffff] text-[16px] font-normal leading-[24px]"
+                                                >84-909-868-915</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="mailto:info_vn@minto-inc.jp"
+                                            class="flex items-center gap-5 hover:opacity-80 cursor-pointer transition-all"
+                                        >
+                                            <img
+                                                src="../../assets/img/icon/contact_info_white.png"
+                                                alt=""
+                                                class="w-[24px] h-[17.6px]"
+                                            />
+                                            <span class="text-[#ffffff] text-[16px] font-normal leading-[24px]"
+                                                >info_vn@minto-inc.jp</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-end">
+                            <form class="flex flex-col gap-5" action="" method="POST" id="form-submit">
+                                <div class="flex flex-col gap-5 form-group">
+                                    <label
+                                        for="fullname"
+                                        class="text-[#F2F3FF] text-[16px] font-semibold leading-[23.1px]"
+                                        >Your name</label
+                                    >
+                                    <div class="flex flex-col gap-1">
+                                        <input
+                                            id="fullname"
+                                            name="fullname"
+                                            rules="required"
+                                            type="text"
+                                            placeholder="Jace..."
+                                            class="bg-[#F2F3FF] text-[#9A9CAC] font-normal text-[16px] leading-[24px] p-[15px] outline-none form-control"
+                                        />
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-5 form-group">
+                                    <label
+                                        for="company"
+                                        class="text-[#F2F3FF] text-[16px] font-semibold leading-[23.1px]"
+                                        >Company</label
+                                    >
+                                    <div class="flex flex-col gap-1">
+                                        <input
+                                            id="company"
+                                            name="company"
+                                            rules="required"
+                                            type="text"
+                                            placeholder="Your company"
+                                            class="bg-[#F2F3FF] text-[#9A9CAC] font-normal text-[16px] leading-[24px] p-[15px] outline-none form-control"
+                                        />
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-5 form-group">
+                                    <label for="email" class="text-[#F2F3FF] text-[16px] font-semibold leading-[23.1px]"
+                                        >Email</label
+                                    >
+                                    <div class="flex flex-col gap-1">
+                                        <input
+                                            id="email"
+                                            name="email"
+                                            rules="required|email"
+                                            type="text"
+                                            placeholder="Enter your mail"
+                                            class="bg-[#F2F3FF] text-[#9A9CAC] font-normal text-[16px] leading-[24px] p-[15px] outline-none form-control"
+                                        />
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-5 form-group">
+                                    <label
+                                        for="select"
+                                        class="text-[#F2F3FF] text-[16px] font-semibold leading-[23.1px]"
+                                        >I’m interested in</label
+                                    >
+                                    <div class="flex flex-col gap-1">
+                                        <select
+                                            id="select"
+                                            name="select"
+                                            type="text"
+                                            rules="required"
+                                            class="bg-[#F2F3FF] text-[#9A9CAC] font-normal text-[16px] leading-[24px] p-[15px] outline-none form-control"
+                                        >
+                                            <option value="">Business inquiries</option>
+                                            <option value="US">Business inquiries 1</option>
+                                            <option value="CA">Business inquiries 2</option>
+                                            <option value="FR">Business inquiries 3</option>
+                                        </select>
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-5 form-group">
+                                    <label
+                                        for="messenger"
+                                        class="text-[#F2F3FF] text-[16px] font-semibold leading-[23.1px]"
+                                        >Your messenger</label
+                                    >
+                                    <div class="flex flex-col gap-1">
+                                        <textarea
+                                            id="messenger"
+                                            name="messenger"
+                                            rules="required|max:250"
+                                            type="text"
+                                            placeholder="Type something"
+                                            class="bg-[#F2F3FF] text-[#9A9CAC] font-normal text-[16px] leading-[24px] p-[15px] outline-none form-control"
+                                            style="height: 176px"
+                                        ></textarea>
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="bg-[#34CEBC] flex items-center justify-center p-4 gap-5 hover:opacity-90"
+                                >
+                                    <span class="text-[#02052E] text-[16px] font-semibold leading-[19.5px]"
+                                        >Submit</span
+                                    >
+                                    <img src="../../assets/img/icon/arrow_right_black.png" alt="" />
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="container mx-auto px-5 md:px-10 lg:px-1 py-6 lg:py-12">
+                <div class="grid grid-cols-2">
+                    <ul class="flex flex-col md:flex-col lg:flex-row gap-0 md:gap-2 lg:gap-10">
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Cookies</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col md:flex-col lg:flex-row justify-end gap-0 md:gap-2 lg:gap-10">
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Subscribe</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Connect</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Work with us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../assets/js/script.js"></script>
+        <script src="../../assets/js/validator.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1300,
+                offset: 300,
+                once: true,
+            });
+
+            var form = new Validator('#form-submit');
+            form.onSubmit = function (formData) {
+                formData;
+            };
+        </script>
+    </body>
+</html>

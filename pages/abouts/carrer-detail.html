@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carrer Detail</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="../../build/tailwind.css" />
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+    </head>
+    <body>
+        <div>
+            <!-- Header -->
+            <div>
+                <!-- Header PC -->
+                <header class="hidden md:hidden lg:block">
+                    <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                        <div class="container mx-auto">
+                            <div
+                                class="flex items-center max-sm:flex-col justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[100px]"
+                            >
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-solution">
+                                        <span
+                                            class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >SOLUTION</span
+                                        >
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-center cursor-pointer">
+                                    <a href="/" class=""><img src="../../assets/img/logo.png" /></a>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                        <span
+                                            class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >ABOUT</span
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Header table and phone -->
+                <header class="block md:block lg:hidden">
+                    <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                        <div class="container mx-auto px-5 md:px-10 lg:px-16">
+                            <div
+                                class="flex items-center justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[15px] md:mb-[100px] lg:mb-[100px]"
+                            >
+                                <div class="flex items-center justify-center cursor-pointer">
+                                    <a href="/" class=""
+                                        ><img
+                                            src="../../assets/img/logo.png"
+                                            class="w-[80px] md:w-[140px] lg:w-[160px]"
+                                    /></a>
+                                    <button
+                                        class="mt-[7px] mx-5 px-2 rounded text-[#ffffff] hover:opacity-80 js-solution"
+                                    >
+                                        <span
+                                            class="text-[18px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >SOLUTION</span
+                                        >
+                                        <i class="fa-solid fa-chevron-right ml-2"></i>
+                                    </button>
+                                </div>
+
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-2 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                        <i class="fa-solid fa-bars text-[30px]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Drop menu v1 -->
+                <div
+                    class="bg-[#02052E] min-h-screen w-full fixed top-0 left-0 right-0 z-50 py-16 header-nav solution-modal js-solution-modal nav-solution"
+                >
+                    <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-solution-modal-container">
+                        <div class="container mx-auto">
+                            <div class="flex items-end justify-start">
+                                <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                    >Solution.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                        <ul class="w-full">
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/character-marrketing.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                        >CHARACTER MARKETTING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/character-licensing.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CHARACTER LICENSING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/creative-branding.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CREATIVE & BRANDING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/digital-stagery.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        DIGITAL & STRATEGY
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/event-production.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        EVENT & PRODUCTION
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="container mx-auto">
+                            <div
+                                class="bg-[#02052E] text-[#ffffff] cursor-pointer p-[19px] float-right hover:opacity-80 js-solution-modal-close"
+                            >
+                                <div class="flex items-center gap-4">
+                                    <img
+                                        src="../../assets/img/icon/square_arrow_left_white.png"
+                                        alt=""
+                                        class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                    />
+                                    <span
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                        >Close</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drop menu v2 -->
+                <div
+                    class="bg-[#02052E] w-full min-h-screen fixed top-0 left-0 right-0 z-50 py-16 header-nav about-modal js-about-modal nav-about"
+                >
+                    <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-about-modal-container">
+                        <div class="container mx-auto">
+                            <div class="flex items-end justify-end">
+                                <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                    >About us.</span
+                                >
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                        <ul class="w-full">
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/about.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        ABOUT MINTO
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/team.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        TEAM
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/news.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        NEWS & IDEA
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/carrer.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CARRER
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/artist-brand.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        ARTIST & BRAND
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/contact.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CONTACT
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="container mx-auto">
+                            <div
+                                class="bg-[#02052E] cursor-pointer p-[19px] text-[#ffffff] hover:opacity-80 js-about-modal-close"
+                            >
+                                <div class="flex items-center gap-4">
+                                    <span
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                        >Close</span
+                                    >
+                                    <img
+                                        src="../../assets/img/icon/square_arrow_right_white.png"
+                                        alt=""
+                                        class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job description -->
+            <div class="w-full bg-darkBlue px-5 md:px-10 lg: mt-40">
+                <div
+                    class="container mx-auto font-bold text-whites py-5 max-lg:py-5 text-[32px] md:text-[48px] lg:text-[64px]"
+                >
+                    Job description
+                </div>
+            </div>
+
+            <!-- FULL TIME ACCOUNT MANAGEMENT INTERNSHIP -->
+            <div class="w-full bg-whites px-5 md:px-10 lg:">
+                <div class="container mx-auto py-8 flex flex-col max-md:gap-5 gap-10">
+                    <div
+                        class="font-bold lg:leading-[48px] text-dbg-darkBlue text-2xl md:text-[32px] lg:text-[40px] max-md:leading-9"
+                    >
+                        FULL TIME ACCOUNT MANAGEMENT INTERNSHIP | HYBRID
+                    </div>
+                    <div class="max-lg:text-base text-[24px]">
+                        <span class="font-normal text-[#494B62] leading-33">What you’ll do</span>
+                        <ul
+                            class="list-disc list-outside font-normal text-[#494B62] px-10 max-md:leading-6 leading-33 max-md:py-2 py-5"
+                        >
+                            <li class="">
+                                Assist in the implementation, and monitoring of marketing campaigns and initiatives for
+                                clients.
+                            </li>
+                            <li>Assist in approaching new clients to consult company services.</li>
+                            <li>
+                                Collaborate with cross-functional teams, including design, content, and social media, to
+                                ensure project milestones are met.
+                            </li>
+                            <li>Help create project schedules and timelines, and track progress against them.</li>
+                            <li>Assist in the management of project budgets and resource allocation.</li>
+                            <li>Help monitor and report on the performance of client campaigns and initiatives.</li>
+                            <li>Provide general administrative support as needed.</li>
+                        </ul>
+                    </div>
+
+                    <div class="max-lg:text-base text-[24px]">
+                        <span class="font-normal text-[#494B62] leading-33">Qualifications:</span>
+
+                        <ul class="list-disc font-normal text-[#494B62] px-10 max-md:leading-6 leading-33">
+                            <li class="">Strong passion for Characters content is a plus.</li>
+                            <li>Honesty, positive attitude and eagerness to learn.</li>
+                            <li>
+                                Currently pursuing or recently graduated with a degree in project management, marketing,
+                                or a related field.
+                            </li>
+                            <li>Strong organizational and time management skills.</li>
+                            <li>Ability to multitask and manage multiple projects simultaneously.</li>
+                            <li>Good communication and interpersonal skills.</li>
+                            <li>Detail-oriented and able to identify potential issues before they arise.</li>
+                            <li>Comfortable with English communication.</li>
+                        </ul>
+                    </div>
+
+                    <div class="max-lg:text-base text-[24px]">
+                        <span class="font-normal text-[#494B62] leading-33"> Benefits </span>
+
+                        <ul class="list-disc font-normal text-[#494B62] px-10 max-md:leading-6 leading-33">
+                            <li class="">Internship salary 3 million per month</li>
+                            <li>Hybrid position</li>
+                            <li>Work from Monday - Friday</li>
+                            <li>
+                                Open to be considered for trainee position after 3 months if your performance is well
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="max-lg:text-base text-[24px]">
+                        <span class="font-normal text-[#494B62] leading-33">HOW TO APPLY?</span>
+                        <div
+                            class="list-outside font-normal text-[#494B62] flex flex-col gap-5 max-md:leading-6 leading-33"
+                        >
+                            <p>
+                                To apply for this role, apply now via hr_vn@minto-inc.jp. Include your resume and cover
+                                letter outlining why you are perfect for this role. Learn more about Minto at
+                                www.mintosea.com
+                            </p>
+                            <p>
+                                Minto is the first agency in Vietnam that focuses solely on character marketing. We have
+                                offices in Japan (HQ), Thailand, China. As a part of the ambitious 2022 growth plans of
+                                Minto in Vietnam, we are looking for talented, team·oriented people, to take on the
+                                exceptional opportunity to join our team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Join Our Community  -->
+            <div class="container mx-auto bg-darkBlue px-5 md:px-10 lg:">
+                <div class="py-10 max-md:py-5">
+                    <h2 class="text-aquas font-bold leading-78 text-4xl md:text-5xl lg:text-64 max-md:leading-9">
+                        Join Our Community
+                    </h2>
+                </div>
+                <form
+                    class="max-w-[752px] flex flex-col gap-4 pt-8 max-md:pt-2"
+                    action=""
+                    method="POST"
+                    id="form-submit"
+                >
+                    <div class="w-full">
+                        <h4 class="text-[#ffffff] text-[24px] md:text-[30px] lg:text-[32px] font-bold leading-[40px]">
+                            Personal information
+                        </h4>
+                        <div class="flex flex-col gap-2 w-full mb-6 mt-6 form-group">
+                            <input
+                                id="fullname"
+                                name="fullname"
+                                rules="required"
+                                type="text"
+                                placeholder="Name"
+                                autocomplete="off"
+                                class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                            />
+                            <span class="form-message ml-4"></span>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                            <input
+                                id="email"
+                                name="email"
+                                rules="required|email"
+                                type="text"
+                                placeholder="Email"
+                                autocomplete="off"
+                                class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                            />
+                            <span class="form-message ml-4"></span>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                            <input
+                                id="phone"
+                                name="phone"
+                                rules="required|min:10|max:10"
+                                type="number"
+                                placeholder="Phone number"
+                                autocomplete="off"
+                                class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                            />
+                            <span class="form-message ml-4"></span>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                            <input
+                                id="address"
+                                name="address"
+                                rules="required"
+                                type="text"
+                                placeholder="Address"
+                                autocomplete="off"
+                                class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                            />
+                            <span class="form-message ml-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="w-full mt-6">
+                        <h4 class="text-[#ffffff] text-[24px] md:text-[30px] lg:text-[32px] font-bold leading-[40px]">
+                            Professional Information
+                        </h4>
+                        <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                            <input
+                                id="job"
+                                name="job"
+                                rules="required"
+                                type="text"
+                                placeholder="Current job"
+                                autocomplete="off"
+                                class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                            />
+                            <span class="form-message ml-4"></span>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                            <input
+                                id="company"
+                                name="company"
+                                rules="required"
+                                type="text"
+                                placeholder="Company/ Organization"
+                                autocomplete="off"
+                                class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                            />
+                            <span class="form-message ml-4"></span>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                            <input
+                                id="web"
+                                name="web"
+                                rules="required"
+                                type="text"
+                                placeholder="Website (if applicable)"
+                                autocomplete="off"
+                                class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                            />
+                            <span class="form-message ml-4"></span>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <h4 class="text-whites text-32 font-bold leading-[40px] max-md:text-2xl">
+                            Attachments (Optional)
+                        </h4>
+                        <div
+                            class="w-full flex items-center justify-between py-6 px-[10px] border-b-[1px] border-b-[#9A9CAC]"
+                        >
+                            <span class="text-[#9A9CAC] text-[16px] lg:text-[20px] font-normal">Resume/CV</span>
+                            <div class="">
+                                <label
+                                    for="upload"
+                                    class="flex items-center justify-center gap-3 hover:opacity-80 cursor-pointer"
+                                >
+                                    <span class="text-[#9A9CAC] text-[16px]">Drag/Upload</span>
+                                    <img src="../../assets/img/icon/upload_file.png" />
+                                </label>
+                                <input id="upload" name="upload" rules="required" type="file" style="display: none" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-full flex items-center justify-between py-6 px-[10px] border-b-[1px] border-b-[#9A9CAC]"
+                        >
+                            <span class="text-[#9A9CAC] text-[16px] lg:text-[20px] font-normal"
+                                >Portfolio ( If applicable)</span
+                            >
+                            <div class="">
+                                <label
+                                    for="upload"
+                                    class="flex items-center justify-center gap-3 hover:opacity-80 cursor-pointer"
+                                >
+                                    <span class="text-[#9A9CAC] text-[16px]">Drag/Upload</span>
+                                    <img src="../../assets/img/icon/upload_file.png" />
+                                </label>
+                                <input id="upload" name="upload" rules="required" type="file" style="display: none" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                        <input
+                            id="behance"
+                            name="behance"
+                            rules="required"
+                            type="text"
+                            placeholder="Behance (If applicable)"
+                            autocomplete="off"
+                            class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                        />
+                        <span class="form-message ml-4"></span>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                        <input
+                            id="behance"
+                            name="behance"
+                            rules="required"
+                            type="text"
+                            placeholder="Behance (If applicable)"
+                            autocomplete="off"
+                            class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                        />
+                        <span class="form-message ml-4"></span>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full mb-6 form-group">
+                        <input
+                            id="message"
+                            name="message"
+                            rules="required"
+                            type="text"
+                            placeholder="Personal Message"
+                            autocomplete="off"
+                            class="block py-4 w-full text-xl max-lg:text-base font-normal text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-b-[#9A9CAC] focus:outline-none focus:ring-0 appearance-none form-control"
+                        />
+                        <span class="form-message ml-4"></span>
+                    </div>
+                    <div class="w-full bg-transparent outline-none py-6 px-[10px]">
+                        <div class="flex gap-7">
+                            <div class="flex items-start justify-start">
+                                <input type="checkbox" />
+                            </div>
+                            <p class="text-[#9A9CAC] text-[14px] font-normal">
+                                - By checking this box, I confirm that the information provided is accurate and
+                                complete.<br />
+                                - I consent to the collection and processing of my personal data for the purpose of
+                                joining the artist community and potential collaborations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="py-6">
+                        <button class="bg-aquas flex items-center justify-between p-4 gap-5 hover:opacity-90">
+                            <span class="text-dbg-darkBlue text-[16px] font-semibold leading-[19.5px]"
+                                >Submit Profile</span
+                            >
+                            <img src="../../assets/img/icon/arrow_right_black.png" />
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- footer -->
+            <div class="container mx-auto px-5 md:px-10 lg:px-1 py-6 lg:py-12">
+                <div class="grid grid-cols-2">
+                    <ul class="flex flex-col md:flex-col lg:flex-row gap-0 md:gap-2 lg:gap-10">
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Cookies</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col md:flex-col lg:flex-row justify-end gap-0 md:gap-2 lg:gap-10">
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Subscribe</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Connect</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Work with us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../assets/js/script.js"></script>
+        <script src="../../assets/js/validator.js"></script>
+
+        <script>
+            var form = new Validator('#form-submit');
+            form.onSubmit = function (formData) {
+                formData;
+            };
+        </script>
+    </body>
+</html>

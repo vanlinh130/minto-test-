@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Minto</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="build/tailwind.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <div>
+            <!-- Header PC -->
+            <header class="hidden md:hidden lg:block">
+                <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                    <div class="container mx-auto">
+                        <div
+                            class="flex items-center max-sm:flex-col justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[100px]"
+                        >
+                            <div class="flex items-center justify-center">
+                                <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-solution">
+                                    <span
+                                        class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                        >SOLUTION</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-center cursor-pointer">
+                                <a href="/" class=""><img src="../../assets/img/logo.png" /></a>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                    <span
+                                        class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                        >ABOUT</span
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Header table and phone -->
+            <header class="block md:block lg:hidden">
+                <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                    <div class="container mx-auto px-5 md:px-10 lg:px-16">
+                        <div
+                            class="flex items-center justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[15px] md:mb-[100px] lg:mb-[100px]"
+                        >
+                            <div class="flex items-center justify-center cursor-pointer">
+                                <a href="/" class=""
+                                    ><img src="../../assets/img/logo.png" class="w-[80px] md:w-[140px] lg:w-[160px]"
+                                /></a>
+                                <button class="mt-[7px] mx-5 px-2 rounded text-[#ffffff] hover:opacity-80 js-solution">
+                                    <span
+                                        class="text-[18px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                        >SOLUTION</span
+                                    >
+                                    <i class="fa-solid fa-chevron-right ml-2"></i>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center justify-center">
+                                <button class="py-1 px-2 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                    <i class="fa-solid fa-bars text-[30px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Drop menu v1 -->
+            <div
+                class="bg-[#02052E] min-h-screen w-full fixed top-0 left-0 right-0 z-50 py-16 header-nav solution-modal js-solution-modal nav-solution"
+            >
+                <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-solution-modal-container">
+                    <div class="container mx-auto">
+                        <div class="flex items-end justify-start">
+                            <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                >Solution.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                    <ul class="w-full">
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                        >
+                            <div class="container mx-auto">
+                                <a
+                                    href="/pages/solutions/character-marrketing.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >CHARACTER MARKETTING
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                        >
+                            <div class="container mx-auto">
+                                <a
+                                    href="/pages/solutions/character-licensing.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    CHARACTER LICENSING
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                        >
+                            <div class="container mx-auto">
+                                <a
+                                    href="/pages/solutions/creative-branding.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    CREATIVE & BRANDING
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                        >
+                            <div class="container mx-auto">
+                                <a
+                                    href="/pages/solutions/digital-stagery.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    DIGITAL & STRATEGY
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                        >
+                            <div class="container mx-auto">
+                                <a
+                                    href="/pages/solutions/event-production.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    EVENT & PRODUCTION
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="container mx-auto">
+                        <div
+                            class="bg-[#02052E] text-[#ffffff] cursor-pointer p-[19px] float-right hover:opacity-80 js-solution-modal-close"
+                        >
+                            <div class="flex items-center gap-4">
+                                <img
+                                    src="../../assets/img/icon/square_arrow_left_white.png"
+                                    alt=""
+                                    class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                />
+                                <span
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                    >Close</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drop menu v2 -->
+            <div
+                class="bg-[#02052E] w-full min-h-screen fixed top-0 left-0 right-0 z-50 py-16 header-nav about-modal js-about-modal nav-about"
+            >
+                <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-about-modal-container">
+                    <div class="container mx-auto">
+                        <div class="flex items-end justify-end">
+                            <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                >About us.</span
+                            >
+                        </div>
+                    </div>
+                    <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                    <ul class="w-full">
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                        >
+                            <div class="container mx-auto flex justify-end">
+                                <a
+                                    href="/pages/abouts/about.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    ABOUT MINTO
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                        >
+                            <div class="container mx-auto flex justify-end">
+                                <a
+                                    href="/pages/abouts/team.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    TEAM
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                        >
+                            <div class="container mx-auto flex justify-end">
+                                <a
+                                    href="/pages/abouts/news.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    NEWS & IDEA
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                        >
+                            <div class="container mx-auto flex justify-end">
+                                <a
+                                    href="/pages/abouts/carrer.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    CARRER
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                        >
+                            <div class="container mx-auto flex justify-end">
+                                <a
+                                    href="/pages/abouts/artist-brand.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    ARTIST & BRAND
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                        >
+                            <div class="container mx-auto flex justify-end">
+                                <a
+                                    href="/pages/abouts/contact.html"
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                >
+                                    CONTACT
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="container mx-auto">
+                        <div
+                            class="bg-[#02052E] cursor-pointer p-[19px] text-[#ffffff] hover:opacity-80 js-about-modal-close"
+                        >
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                    >Close</span
+                                >
+                                <img
+                                    src="../../assets/img/icon/square_arrow_right_white.png"
+                                    alt=""
+                                    class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                <div class="card1">
+                    <div data-aos="fade-up" data-aos-delay="400" class="w-full h-auto">
+                        <img src="./assets/img/img-home/banner.png" alt="" class="w-full h-full" />
+                    </div>
+                </div>
+
+                <div
+                    class="card2 w-full relative mx-auto py-[40px] md:py-[40px] lg:py-[60px] px-5 md:px-5 lg:px-0 bg-[#35CEBC]"
+                >
+                    <div class="container mx-auto flex flex-col px-5 md:px-5 lg:px-0">
+                        <div class="sm:w-[90%] lg:w-[70%]">
+                            <h2
+                                class="text-[32px] md:text-[48px] lg:text-[64px] font-bold leading-[38.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                            >
+                                Pioneering the Next Big Thing in Marketing
+                            </h2>
+                        </div>
+                        <p
+                            class="text-[24px] max-sm:text-[16px] text-[#02052E] font-normal leading-[33.6px] max-sm:leading-[22.6px] my-4 md:my-8 lg:my-8"
+                        >
+                            Minto has been growing brands and businesses since 2008, started with our first character
+                            studio in Tokyo (Japan) where we proudly created one of the most downloaded characters in
+                            the world - including Usagyuuun, Betakkuma, Piyomaru, Business Fish. <br />We continue and
+                            expand that rich legacy through borderless creativity - operating, innovating, and creating
+                            at the intersection of talent and capabilities. <br />Our experts in Creative, Designing,
+                            Public Relations and Strategy work fluidly across 4 offices to realize this passion across
+                            borders.
+                        </p>
+                        <a href="/pages/abouts/about.html" class="m-6">
+                            <button
+                                class="flex items-center gap-3 p-4 border-[1.5px] border-[#ffffff] hover:bg-[#02052e] duration-700"
+                            >
+                                <span class="text-[#ffffff] text-[16px] font-semibold leading-[19.5px]"
+                                    >Get To Know Us</span
+                                >
+                                <img src="assets/img/icon/arrow_right.png" alt="" />
+                            </button>
+                        </a>
+                    </div>
+                    <div
+                        class="w-full h-[60px] md:h-[220px] lg:h-[265px] absolute top-[-50px] md:top-[-200px] lg:top-[-250px] md:bottom-[-45px] lg:bottom-[-65px] left-0 right-0 header-nav-bottom"
+                    ></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our work -->
+        <div class="container mx-auto py-[40px] md:py-[40px] lg:py-[60px]">
+            <div class="bg-[#02052E] px-5 md:px-5 lg:px-0">
+                <div data-aos="zoom-in" data-aos-delay="400" class="flex items-center justify-center pb-5">
+                    <h2
+                        class="text-[#ffffff] text-[32px] md:text-[48px] lg:text-[64px] font-bold leading-[38.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                    >
+                        Our Work
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-5">
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/event-production.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_2.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Đa điểm chạm</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_2.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/creative-branding.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_1.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Linh vật thương hiệu</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_1.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out" class="row-span-2">
+                        <a href="/pages/solutions/character-licensing.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_3.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Character Licensing</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_6_1.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/digital-stagery.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_10.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Xu hướng cá nhân hóa</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_3.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out" class="row-span-2">
+                        <a href="/pages/solutions/character-marrketing.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_3.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Giải mã Character Marketing</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/rectangle_1.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/event-production.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_9.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Tạo liên kết cảm xúc</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_4.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/creative-branding.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_2_1.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Phát hành Sticker</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_5.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/digital-stagery.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_7.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Công cụ kể chuyện hiệu quả</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_7.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/character-marrketing.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_8.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Điểm ngọt ngào trong truyền thông</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_8.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out" class="row-span-2">
+                        <a href="/pages/solutions/character-marrketing.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_3.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Giải mã Character Marketing</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_6_2.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/digital-stagery.html" class="group">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_6.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Khác biệt và nổi bật</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/Vector_9.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out" class="row-span-2">
+                        <a href="/pages/solutions/event-production.html" class="group cursor-pointer">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_4.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Nghiên cứu, thiết kế và xây dựng linh vật thương hiệu từ A-Z</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_6_1.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/character-marrketing.html" class="group cursor-pointer">
+                            <div class="relative">
+                                <div class="relative">
+                                    <img src="assets/img/img-home/image_5.png" alt="" class="w-full h-full" />
+                                    <div class="w-full h-full absolute top-0 flex items-center justify-center">
+                                        <span
+                                            class="text-[#ffffff] text-[24px] max-sm:text-[16px] font-normal leading-[33.6px] max-sm:leading-[22.6px] w-[190px] h-full flex items-center justify-center text-center"
+                                            >Character Marketing</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 duration-700"
+                                >
+                                    <img src="assets/img/img-home/vector_10.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <a href="/pages/solutions/character-marrketing.html">
+                            <div class="relative">
+                                <div class="bg-[#35CEBC] absolute top-0 left-0 right-0 w-full h-full">
+                                    <div class="flex items-end h-full">
+                                        <div class="grid grid-cols-2 p-4 hover:opacity-80">
+                                            <span
+                                                class="text-[16px] md:text-[20px] lg:text-[24px] font-semibold leading-[33.6px] max-sm:leading-[22.6px]"
+                                                >DISCOVER MORE OF OUR WORK!</span
+                                            >
+                                            <div class="flex justify-end items-end">
+                                                <div><img src="assets/img/icon/square_arrow_right.png" alt="" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="assets/img/img-home/image_5.png" alt="" class="w-full h-full" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What The Public Talk About Us -->
+        <div class="bg-[#02052E] pb-32">
+            <div class="container mx-auto md:px-40 lg:px-56">
+                <div
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    data-aos-easing="ease-in-out"
+                    class="flex items-center justify-center pb-5"
+                >
+                    <h2
+                        class="text-[#ffffff] text-center text-[32px] md:text-[48px] lg:text-[64px] font-bold leading-[38.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                    >
+                        What The Public Talk About Us
+                    </h2>
+                </div>
+            </div>
+
+            <div class="hidden md:hidden lg:block">
+                <div class="swiper mySwiper py-5">
+                    <div class="swiper-wrapper grid-cols-3 gap-0">
+                        <div class="swiper-slide">
+                            <a
+                                href="https://advertisingvietnam.com/giai-ma-character-marketing-xu-huong-marketing-se-len-ngoi-trong-tuong-lai-l18971"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_2.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >Premier Japanese mascot agency.</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://advertisingvietnam.com/dau-la-ngoi-nha-moi-cua-cac-linh-vat-thuong-hieu-p19688"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_3.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a
+                                href="https://advertisingvietnam.com/kien-tao-ban-sac-thuong-hieu-bang-ngon-ngu-song-dong-cua-character-marketing-l19990"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_3.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://advertisingvietnam.com/seasonal-branded-stickers-di-tat-trong-cuoc-dua-dot-ngan-sach-mua-le-tet-l20672"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_4.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >MINTO CREATIVE India: The Responsible Manhole</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a
+                                href="https://advertisingvietnam.com/minto-agency-dong-hanh-cung-aeon-vietnam-thoi-hon-vao-linh-vat-meon-chan-l21280"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_5.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >MINTO CREATIVE Hong Kong: Critical Core</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://advertisingvietnam.com/minto-dong-hanh-cung-dentsu-creative-cho-ra-mat-hop-tho-usagyuuun-dua-tao-cao-cap-aomori-vao-viet-nam-l21517"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_6.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a
+                                href="https://vneconomy.vn/minto-agency-character-marketing-hang-dau-nhat-chinh-thuc-vao-viet-nam.htm"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_7.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Hong Kong: Critical Core</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="">
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_3.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_2.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >Premier Japanese mascot agency.</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="">
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_2.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >Premier Japanese mascot agency.</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="block md:block lg:hidden">
+                <div class="swiper mySwiperTb py-5">
+                    <div class="swiper-wrapper grid-cols-3 gap-0">
+                        <div class="swiper-slide">
+                            <a
+                                href="https://advertisingvietnam.com/giai-ma-character-marketing-xu-huong-marketing-se-len-ngoi-trong-tuong-lai-l18971"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_2.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >Premier Japanese mascot agency.</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://advertisingvietnam.com/dau-la-ngoi-nha-moi-cua-cac-linh-vat-thuong-hieu-p19688"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_3.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a
+                                href="https://advertisingvietnam.com/kien-tao-ban-sac-thuong-hieu-bang-ngon-ngu-song-dong-cua-character-marketing-l19990"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_3.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://advertisingvietnam.com/seasonal-branded-stickers-di-tat-trong-cuoc-dua-dot-ngan-sach-mua-le-tet-l20672"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_4.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE India: The Responsible Manhole</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a
+                                href="https://advertisingvietnam.com/minto-agency-dong-hanh-cung-aeon-vietnam-thoi-hon-vao-linh-vat-meon-chan-l21280"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_5.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Hong Kong: Critical Core</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://advertisingvietnam.com/minto-dong-hanh-cung-dentsu-creative-cho-ra-mat-hop-tho-usagyuuun-dua-tao-cao-cap-aomori-vao-viet-nam-l21517"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_6.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a
+                                href="https://vneconomy.vn/minto-agency-character-marketing-hang-dau-nhat-chinh-thuc-vao-viet-nam.htm"
+                            >
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_7.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Hong Kong: Critical Core</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="">
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_3.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[18px] font-semibold leading-7"
+                                                >MINTO CREATIVE Indonesia: CurrenShe with OCBC</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_2.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >Premier Japanese mascot agency.</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="">
+                                <div data-aos="fade-up" data-aos-delay="400" class="relative">
+                                    <div class="hover:opacity-80 cursor-pointer">
+                                        <img src="assets/img/img-home/rectangle_2.png" alt="" class="w-full h-full" />
+                                        <div class="grid grid-cols-2 absolute bottom-0 left-0 right-0 p-10">
+                                            <span class="text-[#ffffff] text-[20px] font-semibold leading-7"
+                                                >Premier Japanese mascot agency.</span
+                                            >
+                                            <div class="flex items-end justify-end">
+                                                <img src="assets/img/icon/subtract_right.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="container mx-auto px-5 md:px-10 lg:px-1 py-6 lg:py-12">
+            <div class="grid grid-cols-2">
+                <ul class="flex flex-col md:flex-col lg:flex-row gap-0 md:gap-2 lg:gap-10">
+                    <li
+                        class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                    >
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li
+                        class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                    >
+                        <a href="">Cookies</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col md:flex-col lg:flex-row justify-end gap-0 md:gap-2 lg:gap-10">
+                    <li
+                        class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                    >
+                        <a href="">Subscribe</a>
+                    </li>
+                    <li
+                        class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                    >
+                        <a href="">Connect</a>
+                    </li>
+                    <li
+                        class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                    >
+                        <a href="">Work with us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="../../assets/js/script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            AOS.init({
+                duration: 1300,
+                offset: 300,
+                once: true,
+            });
+        </script>
+
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+            var swiper = new Swiper('.mySwiperTb', {
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+    </body>
+</html>

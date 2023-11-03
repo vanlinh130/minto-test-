@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../../build/tailwind.css" />
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+    </head>
+    <body>
+        <div class="">
+            <!-- Header -->
+            <div>
+                <!-- Header PC -->
+                <header class="hidden md:hidden lg:block">
+                    <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                        <div class="container mx-auto">
+                            <div
+                                class="flex items-center max-sm:flex-col justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[100px]"
+                            >
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-solution">
+                                        <span
+                                            class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >SOLUTION</span
+                                        >
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-center cursor-pointer">
+                                    <a href="/" class=""><img src="../../assets/img/logo.png" /></a>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-4 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                        <span
+                                            class="text-[24px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >ABOUT</span
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Header table and phone -->
+                <header class="block md:block lg:hidden">
+                    <div class="w-full fixed top-0 left-0 right-0 z-10 header-nav-top">
+                        <div class="container mx-auto px-5 md:px-10 lg:px-16">
+                            <div
+                                class="flex items-center justify-between max-sm:gap-1 mt-5 md:mt-6 lg:mt-8 mb-[15px] md:mb-[100px] lg:mb-[100px]"
+                            >
+                                <div class="flex items-center justify-center cursor-pointer">
+                                    <a href="/" class=""
+                                        ><img
+                                            src="../../assets/img/logo.png"
+                                            class="w-[80px] md:w-[140px] lg:w-[160px]"
+                                    /></a>
+                                    <button
+                                        class="mt-[7px] mx-5 px-2 rounded text-[#ffffff] hover:opacity-80 js-solution"
+                                    >
+                                        <span
+                                            class="text-[18px] font-normal leading-[33.6px] cursor-pointer hover:opacity-90 max-sm:text-[16px]"
+                                            >SOLUTION</span
+                                        >
+                                        <i class="fa-solid fa-chevron-right ml-2"></i>
+                                    </button>
+                                </div>
+
+                                <div class="flex items-center justify-center">
+                                    <button class="py-1 px-2 rounded text-[#ffffff] hover:opacity-80 js-about">
+                                        <i class="fa-solid fa-bars text-[30px]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Drop menu v1 -->
+                <div
+                    class="bg-[#02052E] min-h-screen w-full fixed top-0 left-0 right-0 z-50 py-16 header-nav solution-modal js-solution-modal nav-solution"
+                >
+                    <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-solution-modal-container">
+                        <div class="container mx-auto">
+                            <div class="flex items-end justify-start">
+                                <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                    >Solution.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                        <ul class="w-full">
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/character-marrketing.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                        >CHARACTER MARKETTING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/character-licensing.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CHARACTER LICENSING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/creative-branding.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CREATIVE & BRANDING
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/digital-stagery.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        DIGITAL & STRATEGY
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pl-4 cursor-pointer nav-link-solution"
+                            >
+                                <div class="container mx-auto">
+                                    <a
+                                        href="/pages/solutions/event-production.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        EVENT & PRODUCTION
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="container mx-auto">
+                            <div
+                                class="bg-[#02052E] text-[#ffffff] cursor-pointer p-[19px] float-right hover:opacity-80 js-solution-modal-close"
+                            >
+                                <div class="flex items-center gap-4">
+                                    <img
+                                        src="../../assets/img/icon/square_arrow_left_white.png"
+                                        alt=""
+                                        class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                    />
+                                    <span
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                        >Close</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drop menu v2 -->
+                <div
+                    class="bg-[#02052E] w-full min-h-screen fixed top-0 left-0 right-0 z-50 py-16 header-nav about-modal js-about-modal nav-about"
+                >
+                    <div class="w-full px-[20px] md:px-[30px] lg:px-0 js-about-modal-container">
+                        <div class="container mx-auto">
+                            <div class="flex items-end justify-end">
+                                <span class="text-[#ffffff] text-[32px] font-medium leading-[40px] tracking-[10%]"
+                                    >About us.</span
+                                >
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-b-[#F2F3FF] my-4"></div>
+                        <ul class="w-full">
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/about.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        ABOUT MINTO
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/team.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        TEAM
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/news.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        NEWS & IDEA
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/carrer.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CARRER
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/artist-brand.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        ARTIST & BRAND
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                class="text-[#34CEBC] hover:bg-[#34CEBC] hover:text-[#02052E] hover:pr-4 cursor-pointer nav-link-about"
+                            >
+                                <div class="container mx-auto flex justify-end">
+                                    <a
+                                        href="/pages/abouts/contact.html"
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-normal leading-[48.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                                    >
+                                        CONTACT
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="container mx-auto">
+                            <div
+                                class="bg-[#02052E] cursor-pointer p-[19px] text-[#ffffff] hover:opacity-80 js-about-modal-close"
+                            >
+                                <div class="flex items-center gap-4">
+                                    <span
+                                        class="text-[24px] md:text-[32px] lg:text-[46px] font-medium leading-[40px] tracking-[10%]"
+                                        >Close</span
+                                    >
+                                    <img
+                                        src="../../assets/img/icon/square_arrow_right_white.png"
+                                        alt=""
+                                        class="w-[18px] md:w-[22px] lg:w-[29.34px] h-[27px] md:h-[37px] lg:h-[47px]"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-auto mt-16 md:mt-20 lg:mt-24">
+                <img
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    src="../../assets/img/img-abouts/banner_contact.png"
+                    alt=""
+                    class="w-full h-full"
+                />
+            </div>
+
+            <div class="flex items-center justify-center">
+                <div class="flex flex-col items-center justify-center gap-12 py-16">
+                    <span
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        data-aos-easing="ease-in-out"
+                        class="text-[#ffffff] text-[18px] lg:text-[20px] font-semibold leading-[28px]"
+                        >QUICK CONTACT/CONNECT</span
+                    >
+                    <ul
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        data-aos-easing="ease-in-out"
+                        class="grid grid-cols-4 gap-6 md:gap-8 lg:gap-12"
+                    >
+                        <li class="hover:opacity-80 transition-all">
+                            <a href="" class="relative flex items-center justify-center">
+                                <div
+                                    class="w-[38px] md:w-[39.11px] lg:w-[54.76px] h-[38px] md:h-[39.11px] lg:h-[54.76px] bg-[#92E5DB] rotate-45"
+                                ></div>
+                                <div class="absolute w-[34px] h-[34px]">
+                                    <img src="../../assets/img/icon/info_twitter.png" alt="" class="w-full h-full" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hover:opacity-80 transition-all">
+                            <a href="" class="relative flex items-center justify-center">
+                                <div
+                                    class="w-[38px] md:w-[39.11px] lg:w-[54.76px] h-[38px] md:h-[39.11px] lg:h-[54.76px] bg-[#92E5DB] rotate-45"
+                                ></div>
+                                <div class="absolute w-[28px] h-[28px]">
+                                    <img src="../../assets/img/icon/info_linkedin.png" alt="" class="w-full h-full" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hover:opacity-80 transition-all">
+                            <a href="" class="relative flex items-center justify-center">
+                                <div
+                                    class="w-[38px] md:w-[39.11px] lg:w-[54.76px] h-[38px] md:h-[39.11px] lg:h-[54.76px] bg-[#92E5DB] rotate-45"
+                                ></div>
+                                <div class="absolute w-[28.52px] h-[28.52px]">
+                                    <img src="../../assets/img/icon/info_facebook.png" alt="" class="w-full h-full" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hover:opacity-80 transition-all">
+                            <a href="" class="relative flex items-center justify-center">
+                                <div
+                                    class="w-[38px] md:w-[39.11px] lg:w-[54.76px] h-[38px] md:h-[39.11px] lg:h-[54.76px] bg-[#92E5DB] rotate-45"
+                                ></div>
+                                <div class="absolute w-[34.22px] h-[34.22px]">
+                                    <img src="../../assets/img/icon/info_copy.png" alt="" class="w-full h-full" />
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-[#ffffff]">
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-1 py-5 md:py-10 lg:py-12 px-5 md:px-10 lg:px-1">
+                        <div class="flex flex-col gap-4 text-center px-5 sm:px-16 lg:px-32 py-5">
+                            <span class="text-[#34CEBC] text-[24px] font-normal leading-[33.6px] py-2"
+                                >Let’s Connect</span
+                            >
+                            <h2
+                                class="text-[#02052E] text-[32px] md:text-[48px] lg:text-[64px] font-bold leading-[38.02px] md:leading-[58.02px] lg:leading-[78.02px]"
+                            >
+                                Contact Us
+                            </h2>
+                            <p class="text-[#494B62] text-[16px] lg:text-[24px] font-normal leading-[24px]">
+                                Reach out for new business, media inquiries and other requests
+                            </p>
+                        </div>
+
+                        <form id="submit" class="max-w-[752px] flex flex-col gap-4 py-10">
+                            <div class="w-full">
+                                <h4
+                                    class="text-[#02052E] text-[24px] md:text-[30px] lg:text-[32px] font-bold leading-[40px]"
+                                >
+                                    Personal information
+                                </h4>
+                                <div class="w-full mb-6 mt-6">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        autocomplete="off"
+                                        class="block py-4 w-full text-xl font-semibold text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-[#9A9CAC] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder="Name"
+                                    />
+                                    <small class="text-[#ef0b0b] italic"></small>
+                                </div>
+                                <div class="w-full mb-6">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        autocomplete="off"
+                                        class="block py-4 w-full text-xl font-semibold text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-[#9A9CAC] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder="Email"
+                                    />
+                                    <small class="text-[#ef0b0b] italic"></small>
+                                </div>
+                                <div class="w-full mb-6">
+                                    <input
+                                        type="number"
+                                        name="phone"
+                                        id="phone"
+                                        autocomplete="off"
+                                        class="block py-4 w-full text-xl font-semibold text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-[#9A9CAC] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder="Phone number"
+                                    />
+                                    <small class="text-[#ef0b0b] italic"></small>
+                                </div>
+                                <div class="w-full mb-6">
+                                    <input
+                                        type="text"
+                                        name="company"
+                                        id="company"
+                                        autocomplete="off"
+                                        class="block py-4 w-full text-xl font-semibold text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-[#9A9CAC] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder="Company/Organization:"
+                                    />
+                                    <small class="text-[#ef0b0b] italic"></small>
+                                </div>
+                            </div>
+
+                            <div class="w-full mt-4">
+                                <h4
+                                    class="text-[#02052E] text-[24px] md:text-[30px] lg:text-[32px] font-bold leading-[40px]"
+                                >
+                                    Subject and Message
+                                </h4>
+                                <div class="w-full mb-6">
+                                    <input
+                                        type="text"
+                                        name="subject"
+                                        id="subject"
+                                        autocomplete="off"
+                                        class="block py-4 w-full text-xl font-semibold text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-[#9A9CAC] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder="Subject"
+                                    />
+                                    <small class="text-[#ef0b0b] italic"></small>
+                                </div>
+                                <div class="w-full mb-6">
+                                    <input
+                                        type="text"
+                                        name="message"
+                                        id="message"
+                                        autocomplete="off"
+                                        class="block py-4 w-full text-xl font-semibold text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-[#9A9CAC] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder="Message"
+                                    />
+                                    <small class="text-[#ef0b0b] italic"></small>
+                                </div>
+                            </div>
+                            <div class="w-full mt-4">
+                                <h4
+                                    class="text-[#02052E] text-[24px] md:text-[30px] lg:text-[32px] font-bold leading-[40px]"
+                                >
+                                    Inquiry Details
+                                </h4>
+                                <div class="py-4 px-[10px]">
+                                    <h5 class="text-[#494B62] text-[18px] lg:text-[20px] font-semibold leading-[28px]">
+                                        What services are you interested in? (Check all that apply)
+                                    </h5>
+                                </div>
+                                <div class="w-full px-[10px] border-b-[1px] border-b-[#9A9CAC]">
+                                    <div class="flex items-center justify-items-center gap-2 py-3">
+                                        <input type="checkbox" id="checkbox" name="checkbox" />
+                                        <span class="text-[#9A9CAC] text-[14px] font-normal leading-[22px]"
+                                            >Character Marketing</span
+                                        >
+                                    </div>
+                                    <div class="flex items-center justify-items-center gap-2 py-3">
+                                        <input type="checkbox" id="checkbox" name="checkbox" />
+                                        <span class="text-[#9A9CAC] text-[14px] font-normal leading-[22px]"
+                                            >Character Licensing</span
+                                        >
+                                    </div>
+                                    <div class="flex items-center justify-items-center gap-2 py-3">
+                                        <input type="checkbox" id="checkbox" name="checkbox" />
+                                        <span class="text-[#9A9CAC] text-[14px] font-normal leading-[22px]"
+                                            >Creative & Branding</span
+                                        >
+                                    </div>
+                                    <div class="flex items-center justify-items-center gap-2 py-3">
+                                        <input type="checkbox" id="checkbox" name="checkbox" />
+                                        <span class="text-[#9A9CAC] text-[14px] font-normal leading-[22px]"
+                                            >Digital & Strategy</span
+                                        >
+                                    </div>
+                                    <div class="flex items-center justify-items-center gap-2 py-3">
+                                        <input type="checkbox" id="checkbox" name="checkbox" />
+                                        <span class="text-[#9A9CAC] text-[14px] font-normal leading-[22px]"
+                                            >Event & Activation</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <input
+                                        type="text"
+                                        autocomplete="off"
+                                        class="block py-4 w-full text-xl font-semibold text-[#9A9CAC] bg-transparent border-0 border-b-[1px] border-[#9A9CAC] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder="Tell us more about your project or inquiry:"
+                                    />
+                                </div>
+                            </div>
+                            <div class="w-full bg-transparent outline-none py-6 px-[10px]">
+                                <div class="flex gap-7">
+                                    <div class="flex items-start justify-start">
+                                        <input type="checkbox" />
+                                    </div>
+                                    <p class="text-[#9A9CAC] text-[14px] font-normal leading-[22px]">
+                                        By checking this box, I confirm that the information provided is accurate and
+                                        complete. I consent to the collection and processing of my personal data for the
+                                        purpose of this inquiry.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                        <div
+                            class="py-6 flex items-center max-sm:justify-center"
+                            data-modal-target="modal"
+                            data-modal-toggle="modal"
+                        >
+                            <button class="bg-[#34CEBC] flex items-center justify-between p-4 gap-5 hover:opacity-90">
+                                <span class="text-[#02052E] text-[16px] font-semibold leading-[19.5px]"
+                                    >Submit Profile</span
+                                >
+                                <img src="../../assets/img/icon/arrow_right_black.png" />
+                            </button>
+                        </div>
+                        <div
+                            id="modal"
+                            tabindex="-1"
+                            aria-hidden="true"
+                            class="fixed top-0 left-0 right-0 z-50 hidden overflow-y-auto overflow-x-hidden h-[calc(100%)]"
+                        >
+                            <div class="bg-[#FFFFFF] max-w-[946px] py-6 shadow-xl ani-modal">
+                                <div class="px-3 md:px-8 lg:px-14">
+                                    <div class="hidden md:block lg:block">
+                                        <div
+                                            class="cursor-pointer hover:opacity-90 flex justify-end mr-5"
+                                            data-modal-hide="modal"
+                                        >
+                                            <img src="../../assets/img/icon/xCircle.png" />
+                                        </div>
+                                    </div>
+                                    <div class="block md:hidden lg:hidden">
+                                        <div class="flex flex-col gap-3">
+                                            <div
+                                                class="flex items-center gap-2 hover:opacity-80 hover:cursor-pointer"
+                                                data-modal-hide="modal"
+                                            >
+                                                <img
+                                                    src="../../assets/img/icon/left_black.png"
+                                                    alt=""
+                                                    class="w-[18px]"
+                                                />
+                                                <span class="text-[16px]">Back to Ideas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-[14px]">
+                                        <div class="flex flex-col gap-3 md:gap-4 lg:gap-8 text-center col-span-2">
+                                            <h1
+                                                class="text-[#34CEBC] text-[32px] md:text-[48px] lg:text-[64px] font-bold leading-[78.02px]"
+                                            >
+                                                THANK YOU!
+                                            </h1>
+                                            <div class="flex flex-col gap-3 md:gap-4 lg:gap-8">
+                                                <p
+                                                    class="text-[#494B62] text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[24.38px] text-center"
+                                                >
+                                                    Thank you for reaching out to us. Your message has been received,
+                                                    and our team is excited to review the details you provided.
+                                                </p>
+                                                <p
+                                                    class="text-[#494B62] text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[24.38px] text-center"
+                                                >
+                                                    If you have any additional information or details that you would
+                                                    like to share with us, please feel free to reach out to our team
+                                                    directly at info_vn@minto-inc.jp.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <img src="../../assets/img/logo_03.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="container mx-auto px-5 md:px-10 lg:px-1 py-6 lg:py-12">
+                <div class="grid grid-cols-2">
+                    <ul class="flex flex-col md:flex-col lg:flex-row gap-0 md:gap-2 lg:gap-10">
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Cookies</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col md:flex-col lg:flex-row justify-end gap-0 md:gap-2 lg:gap-10">
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Subscribe</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Connect</a>
+                        </li>
+                        <li
+                            class="font-normal text-[16px] md:text-[20px] lg:text-[24px] leading-[33.6px] text-[#ffffff] hover:opacity-80"
+                        >
+                            <a href="">Work with us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../assets/js/script.js"></script>
+        <script src="../../assets/js/validateForm.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <script>
+            AOS.init({
+                duration: 1300,
+                offset: 300,
+                once: true,
+            });
+        </script>
+    </body>
+</html>
